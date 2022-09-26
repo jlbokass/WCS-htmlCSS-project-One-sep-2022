@@ -53,7 +53,7 @@ An online CV gives more freedom than a paper CV, be creative and fun ;-)
 ### Group 1
 * Tolo
 * Andy
-* Anthony H
+* Anthony
 * Johann
 
 ### Group 2
@@ -68,7 +68,6 @@ An online CV gives more freedom than a paper CV, be creative and fun ;-)
 * Julien
 
 ### Group 4
-* Groupe 4
 * Bixente
 * Yazid
 * Pierre
