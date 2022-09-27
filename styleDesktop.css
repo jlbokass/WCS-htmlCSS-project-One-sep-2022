@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;500&family=Patua+One&display=swap");
+/*Game of thrones font*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Patua+One&display=swap");
+/*Monserrat font*/
+:root {
+  --backgroundBody: #BFF7FF;
+  --backgroundBox: #3088AE;
+  --shadow: #002C3A;
+  --border: #002C3A;
+  --colorFont: #002C3A;
+  --titleFont: Cinzel, serif;
+  --mainFont: Montserrat, serif;
+}
+
+@media screen {
+  body {
+    line-height: 1.5em;
+    background-color: var(--backgroundBody);
+    color: var(--colorFont);
+  }
+  main {
+    margin: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
+  }
+  header img {
+    max-width: 75%;
+    border-radius: 50%;
+    /*box-shadow: 5px 5px 5px var(--shadow);*/
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+  }
+  #about h2 {
+    align-items: center;
+    margin: 0;
+    margin-bottom: 5vh;
+    font-size: 4vw;
+    font-family: var(--titleFont);
+  }
+  #about p {
+    margin: 0;
+    font-size: 1vw;
+    font-family: var(--mainFont);
+  }
+  .info {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+  }
+  .info a {
+    text-decoration: none;
+    color: var(--colorFont);
+  }
+  .info article {
+    border: solid 0px var(--border);
+    border-radius: 10px;
+    background-color: var(--backgroundBox);
+    padding: 0 5px;
+    margin: 2vw;
+    min-height: 15vw;
+    min-width: 45vw;
+    /*transition: transform 0.5s;*/
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    height: 49px;
+    width: 22%;
+    margin: 5px 1% 5px 1%;
+    float: left;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: center;
+    overflow: hidden;
+    transition: 1.5s;
+  }
+  .info article h2 {
+    font-family: var(--titleFont);
+    font-size: 2vw;
+  }
+  .info article p {
+    font-family: var(--mainFont);
+    font-size: 1vw;
+  }
+  .info article:hover {
+    height: 145px;
+    width: 50vw;
+    /*transform: scale(1.1);*/
+  }
+  .info #suite1 {
+    margin: 0;
+    display: none;
+  }
+  .info #suite2 {
+    margin: 0;
+    display: none;
+  }
+  .info #suite3 {
+    margin: 0;
+    display: none;
+  }
+  .info #suite4 {
+    margin: 0;
+    display: none;
+  }
+}/*# sourceMappingURL=styleDesktop.css.map */
