@@ -1,3 +1,8 @@
+<?php
+require 'elements/data.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -21,44 +26,41 @@
         </div>
         <article>
             <a href="#" onclick="voirsuite1();" id="voirsuite1">
-                <h2>Expérience</h2>
+                <h2><?= $data[0][0] ?></h2>
             </a>
             <div id="suite1">
-                <h2 class="article-title">Expérience</h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /><br />
-                <a href="#" onclick="replier1();" id="replier1"><span>X</span></a>
-
+                <h2 class="article-title"><?= $data[0][0] ?></h2>
+                <?php foreach ($data[1] as $value) {
+                    echo $value . "<br>";
+                }
+                ?>
+                <br>
+                <a href="#" onclick="replier1();" id="replier1">X</a>
             </div>
         </article>
         <article>
             <a href="#" onclick="voirsuite2();" id="voirsuite2">
-                <h2>Compétences</h2>
+                <h2><?= $data[0][1] ?></h2>
             </a>
             <div id="suite2">
-                <h2>Compétences</h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /><br />
+                <h2><?= $data[0][1] ?></h2>
+                <?php foreach ($data[2] as $value) {
+                    echo $value . "<br>";
+                }
+                ?><br />
                 <a href="#" onclick="replier2();" id="replier2">X</a>
             </div>
         </article>
         <article>
             <a href="#" onclick="voirsuite3();" id="voirsuite3">
-                <h2>Formation</h2>
+                <h2><?= $data[0][2] ?></h2>
             </a>
             <div id="suite3">
-                <h2>Formation</h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /><br />
+                <h2><?= $data[0][2] ?></h2>
+                <?php foreach ($data[3] as $value) {
+                    echo $value . "<br>";
+                }
+                ?><br />
                 <a href="#" onclick="replier3();" id="replier3">X</a>
             </div>
         </article>
