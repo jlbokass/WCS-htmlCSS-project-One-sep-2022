@@ -25,33 +25,56 @@
     justify-content: center;
   }
   header {
+    margin: 0;
     margin-top: 2%;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
   }
   header img {
-    max-width: 75%;
+    max-width: 40%;
     border-radius: 50%;
-    /*box-shadow: 5px 5px 5px var(--shadow);*/
+  }
+  header #fName {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 8vw;
+    font-family: var(--titleFont);
+    -webkit-animation: fadeIn 5s;
+            animation: fadeIn 5s;
+  }
+  header #lName {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    font-size: 8vw;
+    font-family: var(--titleFont);
+    -webkit-animation: fadeIn 5s;
+            animation: fadeIn 5s;
   }
   #about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
   }
   #about h2 {
     align-items: center;
     margin: 0;
-    margin-bottom: 5vh;
-    font-size: 4vw;
+    margin-bottom: 4vh;
+    font-size: 3vw;
     font-family: var(--titleFont);
   }
   #about p {
     margin: 0;
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-family: var(--mainFont);
   }
   .info {
@@ -73,19 +96,7 @@
     margin: 2vw;
     min-height: 15vw;
     min-width: 45vw;
-    /*transition: transform 0.5s;*/
-    padding: 5px 5px 5px 5px;
-    border-radius: 10px;
-    height: 49px;
-    width: 22%;
-    margin: 5px 1% 5px 1%;
-    float: left;
-    position: relative;
-    transition: height 0.5s;
-    -webkit-transition: height 0.5s;
-    text-align: center;
-    overflow: hidden;
-    transition: 1.5s;
+    transition: transform 0.5s;
   }
   .info article h2 {
     font-family: var(--titleFont);
@@ -96,9 +107,7 @@
     font-size: 1vw;
   }
   .info article:hover {
-    height: 145px;
-    width: 50vw;
-    /*transform: scale(1.1);*/
+    transform: scale(1.04);
   }
   .info #suite1 {
     margin: 0;
@@ -115,5 +124,21 @@
   .info #suite4 {
     margin: 0;
     display: none;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }/*# sourceMappingURL=styleDesktop.css.map */
