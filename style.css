@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
+:root{
+      --backgroundBody :  #BFF7FF;
+      --backgroundBox : #3088AE;
+      --shadow : #002C3A;
+      --border: #002C3A;
+      --colorFont: #002C3A;
+}
 body{
     font-family: 'Roboto', sans-serif;
     display: flex;
     line-height: 1.5em;
-    background-color: #BFF7FF;
-    color: #002C3A
+    background-color: var(--backgroundBody);
+    color: var(--colorFont);
 }
 #suite1
 {
@@ -39,21 +46,21 @@ header {
 header img{
     width: 75%;
     border-radius: 50%;
-    box-shadow: 5px 5px 5px #002C3A;
+    box-shadow: 5px 5px 5px var(--shadow);
 }
 a{
     text-decoration: none;
-    color: #002C3A;
+    color: var(--colorFont);
 }
 main{
     display: flex;
     flex-direction: column;
 }
 article{
-    border: solid 1px #002C3A;
-    box-shadow: 5px 5px 5px #002C3A;
+    border: solid 1px var(--border);
+    box-shadow: 5px 5px 5px var(--shadow);
     border-radius: 5px;
-    background-color: #3088AE;
+    background-color: var(--backgroundBox);
     margin: 20px;
     padding: 0 5px;
     transition: transform 0.5s;
