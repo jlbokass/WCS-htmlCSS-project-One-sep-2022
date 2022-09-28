@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Patua+One&display=swap");
 /*Monserrat font*/
 :root {
-  --backgroundBody: #BFF7FF;
+  --backgroundBody: #e5fdff;
   --backgroundBox: #3088AE;
   --shadow: #002C3A;
   --border: #002C3A;
@@ -76,6 +76,7 @@
     margin: 0;
     font-size: 1.5vw;
     font-family: var(--mainFont);
+    text-align: center;
   }
   .info {
     margin: 0;
@@ -141,11 +142,12 @@
       opacity: 1;
     }
   }
+
 }/*# sourceMappingURL=styleDesktop.css.map */
 
 
-/* BUTTONS */ 
-
+}
+/* BUTTONS */
 
 #button-off {
   display: none;
@@ -172,8 +174,8 @@
 }
 
 #lang-selection {
-  
   display: none;
   align-self: end;
   font-size: 0.7rem;
-}
+}/*# sourceMappingURL=styleDesktop.css.map */
+
