@@ -21,7 +21,6 @@
 body{
     font-family: 'Cinzel Decorative', cursive;
 
-    display: flex;
     line-height: 1.5em;
     background-color: var(--backgroundBody);
     color: var(--colorFont);
@@ -62,7 +61,6 @@ body{
 }
 #suite4 h2{
     font-family: 'Cinzel Decorative', cursive;
->>>>>>> develop
 }
 
 p {
