@@ -30,17 +30,37 @@
     }
 
     header {
-        margin-top: 4%;
-        margin-bottom: 4%;
+        margin: 0;
+        margin-top: 2%;
+        padding-bottom: 15%;
         display: flex;
-        justify-content: center;
-
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
         img {
-            max-width: 75%;
-            border-radius: 50%;
-            box-shadow: 5px 5px 5px var(--shadow);
+          max-width: 55%;
+          border-radius: 50%;      
         }
-    }
+        #fName{
+          margin: 0;
+          position: absolute;
+          top: 85%;
+          left: 28%;
+          font-size: max(8vw);
+          font-family: var(--titleFont);
+          animation: fadeIn 5s;
+        }
+        #lName{
+          margin: 0;
+          position: absolute;
+          top: 85%;
+          right: 25%;
+          font-size: max(8vw);
+          font-family: var(--titleFont);
+          animation: fadeIn 5s;
+        }
+      }
 
     #about {
         display: flex;
@@ -95,7 +115,7 @@
         }
 
         article:hover {
-            transform: scale(1.1);
+            transform: scale(1.04);
         }
 
         #suite1
@@ -133,3 +153,76 @@
     }
 
 }
+
+
+/* BUTTONS */ 
+
+
+#button-off {
+    display: none;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  .drop-down-menu {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 25px 25px 25px 25px;
+  }
+  
+  .drop-down-menu:hover {
+    background-color: grey;
+  }
+  
+  .lang {
+    font-size: 0.7rem;
+  }
+  
+  #lang-selection {
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+/* BUTTONS */
+
+#button-off {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.drop-down-menu {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.drop-down-menu:hover {
+    background-color: grey;
+}
+
+.lang {
+    font-size: 0.7rem;
+}
+
+#lang-selection {
+
+    
+    display: none;
+    align-self: end;
+    font-size: 0.7rem;
+
+  }
+
+}
+
