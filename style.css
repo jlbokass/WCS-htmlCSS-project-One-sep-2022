@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 
 :root{
       --backgroundBody :  #BFF7FF;
@@ -8,7 +9,7 @@
       --colorFont: #002C3A;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
     display: flex;
     line-height: 1.5em;
     background-color: var(--backgroundBody);
@@ -18,21 +19,37 @@ body{
 {
     margin:0;
     display:none;
+    font-family: 'Roboto', sans-serif;
+}
+#suite1 h2{
+    font-family: 'Cinzel Decorative', cursive;
 }
 #suite2
 {
     margin:0;
     display:none;
+    font-family: 'Roboto', sans-serif;
+}
+#suite2 h2{
+    font-family: 'Cinzel Decorative', cursive;
 }
 #suite3
 {
     margin:0;
     display:none;
+    font-family: 'Roboto', sans-serif;
+}
+#suite3 h2{
+    font-family: 'Cinzel Decorative', cursive;
 }
 #suite4
 {
     margin:0;
     display:none;
+    font-family: 'Roboto', sans-serif;
+}
+#suite4 h2{
+    font-family: 'Cinzel Decorative', cursive;
 }
 p{
     text-align: center;
