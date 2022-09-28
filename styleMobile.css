@@ -128,7 +128,6 @@
 /* BUTTONS */
 
 
-
 }
 @-webkit-keyframes fadeIn {
   0% {
@@ -147,7 +146,7 @@
   }
 }
 /* BUTTONS */
->>>>>>> devAndy
+
 #button-off {
   display: none;
 }
@@ -170,18 +169,23 @@
 
 .lang {
   font-size: 0.7rem;
+
+  text-decoration: none;
+
 }
 
 #lang-selection {
 
-  
+
   display: none;
   align-self: end;
   font-size: 0.7rem;
 }
+
 
   display: none;
   align-self: end;
   font-size: 0.7rem;
 }/*# sourceMappingURL=styleMobile.css.map */
+
 

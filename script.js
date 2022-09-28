@@ -53,6 +53,9 @@ function languageOn() {
 function replierLanguage() {
     document.getElementById('lang-selection').style.display='block';
      document.getElementById('lang-selection').style.display='none';
+
+ }
+
  }
  
 
@@ -66,6 +69,7 @@ function replierLanguage() {
         buttons.addEventListener('click', ()=> {
             body.classList.toggle('dark-mode');
         })
+
 
 
 
