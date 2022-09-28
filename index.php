@@ -64,6 +64,13 @@ require 'elements/data.php';
             <img src="/img/JonSnow.jpg" alt="Profil" srcset="">
             <h1 id="fName">jon</h1>
             <h1 id="lName">SNOW</h1>
+                <div class="logoReseaux">
+                <a href="https://twitter.com/LordSnow" target="_blank"><img src="/img/twitter-logo.png" class ="twitter" alt="logo lien twitter"></a>
+                <a href="https://uk.linkedin.com/in/jon-snow-3b1245192/fr?trk=people-guest_people_search-card" target="_blank"><img src="/img/linkedin-logo.png" class="linkedin" alt="logo lien linkedin"></a>
+                
+                
+                
+                </div>
         </header>
         <div id="about">
             <h2>Team leader</h2>
