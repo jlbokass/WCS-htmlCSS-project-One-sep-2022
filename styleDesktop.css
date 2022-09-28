@@ -167,6 +167,7 @@
 
 .lang {
   font-size: 0.7rem;
+  text-decoration: none;
 }
 
 #lang-selection {
@@ -175,5 +176,6 @@
   align-self: end;
   font-size: 0.7rem;
 }
+
 
 

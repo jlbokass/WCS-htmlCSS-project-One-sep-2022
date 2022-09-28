@@ -1,6 +1,5 @@
 <?php
 require 'elements/data.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -32,19 +31,18 @@ require 'elements/data.php';
             <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()" ></i>
             <div class="drop-down-menu">
 
-                <span><a href="#" class="lang" onclick="languageOn()">Select language</a></span>
+                <span><a href="#" class="lang" onclick="languageOn()" >Select language</a></span>
                
                 
             </div>
         </div>
 
-        </div>
         <div id="lang-selection">
-            <span>
-                <a href='index.php?data=FR'>FR</a>
-                <a href='index.php?data=EN'>EN</a>
-                <a href='index.php?data=VAL'>VAL</a>
-                <a href="#" onclick="replierLanguage();" id="replierLanguage">X</a>
+            <span >
+                <a href='index.php?data=FR' class="lang">FR</a>
+                <a href='index.php?data=EN' class="lang">EN</a>
+                <a href='index.php?data=VAL' class="lang">VAL</a>
+                <a href="#" onclick="replierLanguage();" id="replierLanguage" class="lang">X</a>
             </span>
        
     </div>
