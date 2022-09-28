@@ -142,8 +142,13 @@
       opacity: 1;
     }
   }
+
+}/*# sourceMappingURL=styleDesktop.css.map */
+
+
 }
 /* BUTTONS */
+
 #button-off {
   display: none;
 }
@@ -151,6 +156,7 @@
 .buttons {
   display: flex;
   justify-content: space-between;
+
 }
 
 .drop-down-menu {
@@ -172,3 +178,4 @@
   align-self: end;
   font-size: 0.7rem;
 }/*# sourceMappingURL=styleDesktop.css.map */
+

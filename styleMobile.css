@@ -122,6 +122,13 @@
     margin: 0;
     display: none;
   }
+
+}/*# sourceMappingURL=styleMobile.css.map */
+
+/* BUTTONS */
+
+
+
 }
 @-webkit-keyframes fadeIn {
   0% {
@@ -140,6 +147,7 @@
   }
 }
 /* BUTTONS */
+>>>>>>> devAndy
 #button-off {
   display: none;
 }
@@ -147,6 +155,7 @@
 .buttons {
   display: flex;
   justify-content: space-between;
+
 }
 
 .drop-down-menu {
@@ -164,7 +173,15 @@
 }
 
 #lang-selection {
+
+  
+  display: none;
+  align-self: end;
+  font-size: 0.7rem;
+}
+
   display: none;
   align-self: end;
   font-size: 0.7rem;
 }/*# sourceMappingURL=styleMobile.css.map */
+

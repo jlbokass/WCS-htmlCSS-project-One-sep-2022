@@ -18,22 +18,35 @@ require 'elements/data.php';
 
     <link rel="stylesheet" media='screen and (max-width: 930px)' href="styleMobile.css"/>
     <link rel="stylesheet" media='screen and (min-width: 931px)' href="styleDesktop.css"/>
+    <link rel="stylesheet"  href="style.css"/>
 
-    <script src="script.js"></script>
+
+
 </head>
 
 <body>
+
+
     <main>
 
   <script src="https://kit.fontawesome.com/67a2af0157.js" crossorigin="anonymous">
 
         </script>
+
+
         <div class="buttons">
+        <div class="button">
 
-            <i id="button-on" class="fa-solid fa-toggle-on"  onclick="darkmode()" ></i>
+            
+
+            <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>
 
 
-            <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()" ></i>
+            <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
+
+</div>
+
+
             <div class="drop-down-menu">
 
                 <span><a href="#" class="lang" onclick="languageOn()">Select language</a></span>
@@ -47,6 +60,7 @@ require 'elements/data.php';
         <span> FR <br /> ENG <br /> VAL  <br /><a href="#" onclick="replierLanguage();" id="replierLanguage">X</a></span>
        
     </div>
+
         <header>
             <img src="/img/JonSnow.jpg" alt="Profil" srcset="">
             <h1 id="fName">jon</h1>
@@ -128,6 +142,8 @@ require 'elements/data.php';
         </section>
 
     </main>
+
+    <script src="/script.js"></script>
 
 </body>
 
