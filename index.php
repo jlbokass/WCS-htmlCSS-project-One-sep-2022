@@ -1,11 +1,7 @@
-
-
 <?php
 require 'elements/data.php';
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -44,7 +40,12 @@ require 'elements/data.php';
 
         </div>
         <div id="lang-selection">
-        <span> FR <br /> ENG <br /> VAL  <br /><a href="#" onclick="replierLanguage();" id="replierLanguage">X</a></span>
+            <span>
+                <a href='index.php?data=FR'>FR</a>
+                <a href='index.php?data=EN'>EN</a>
+                <a href='index.php?data=VAL'>VAL</a>
+                <a href="#" onclick="replierLanguage();" id="replierLanguage">X</a>
+            </span>
        
     </div>
         <header>
@@ -54,14 +55,10 @@ require 'elements/data.php';
         </header>
         <div id="about">
             <h2>Team leader</h2>
-            <p>I am an effective leader, that has the power to motivate loyal people to reach and exceed their potential. I lead by example and I have a natural flair for leadership with a proven track record of winning.</p>
+            <p><?= $data[4][0] ?></p>
         </div>
         <section class="info">
-       
 
-
-      
-     
         <article>
             <a href="#" onclick="voirsuite1();" id="voirsuite1">
 

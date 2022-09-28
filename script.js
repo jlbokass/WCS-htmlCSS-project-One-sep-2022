@@ -54,15 +54,3 @@ function replierLanguage() {
     document.getElementById('lang-selection').style.display='block';
      document.getElementById('lang-selection').style.display='none';
  }
- 
- 
- 
-
-
-
-
-
-
-
-
-
