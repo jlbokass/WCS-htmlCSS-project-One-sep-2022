@@ -1,70 +1,142 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 
-:root{
-      --backgroundBody :  #BFF7FF;
-      --backgroundBox : #3088AE;
-      --shadow : #002C3A;
-      --border: #002C3A;
-      --colorFont: #002C3A;
+:root {
+    --backgroundBody: #BFF7FF;
+    --backgroundBox: #3088AE;
+    --shadow: #002C3A;
+    --border: #002C3A;
+    --colorFont: #002C3A;
 }
+
+.dark-mode {
+    --backgroundBody: #020B10;
+    --backgroundBox: #181733;
+    --shadow: #E6E0E6;
+    --border: #080B35;
+    --colorFont: #E6E0E6;
+}
+
+
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+
     display: flex;
     line-height: 1.5em;
     background-color: var(--backgroundBody);
     color: var(--colorFont);
 }
+
 #suite1
 {
     margin:0;
     display:none;
+    font-family: 'Roboto', sans-serif;
+}
+#suite1 h2{
+    font-family: 'Cinzel Decorative', cursive;
 }
 #suite2
 {
     margin:0;
     display:none;
+    font-family: 'Roboto', sans-serif;
+}
+#suite2 h2{
+    font-family: 'Cinzel Decorative', cursive;
 }
 #suite3
 {
     margin:0;
     display:none;
+    font-family: 'Roboto', sans-serif;
+}
+#suite3 h2{
+    font-family: 'Cinzel Decorative', cursive;
 }
 #suite4
 {
     margin:0;
     display:none;
+    font-family: 'Roboto', sans-serif;
 }
-p{
+#suite4 h2{
+    font-family: 'Cinzel Decorative', cursive;
+>>>>>>> develop
+}
+
+p {
     text-align: center;
     font-style: italic;
 }
+
 header {
     margin-top: 10px;
     display: flex;
     justify-content: center;
 }
-header img{
+
+header img {
     width: 75%;
     border-radius: 50%;
     box-shadow: 5px 5px 5px var(--shadow);
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--colorFont);
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
 }
-article{
+
+article {
     border: solid 1px var(--border);
-    box-shadow: 5px 5px 5px var(--shadow);
+    /*box-shadow: 5px 5px 5px var(--shadow);*/
     border-radius: 5px;
     background-color: var(--backgroundBox);
     margin: 20px;
     padding: 0 5px;
     transition: transform 0.5s;
 }
-article:hover{
+
+article:hover {
     transform: scale(1.1);
 }
+
+/* BUTTONS */
+
+#button-off {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.drop-down-menu {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.drop-down-menu:hover {
+    background-color: grey;
+}
+
+.lang {
+    font-size: 0.7rem;
+}
+
+#lang-selection {
+    
+    display: none;
+    align-self: end;
+    font-size: 0.7rem;
+}
+
+
