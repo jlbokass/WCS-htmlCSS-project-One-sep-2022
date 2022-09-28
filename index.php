@@ -1,11 +1,6 @@
-
-
 <?php
 require 'elements/data.php';
-
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -18,35 +13,53 @@ require 'elements/data.php';
 
     <link rel="stylesheet" media='screen and (max-width: 930px)' href="styleMobile.css"/>
     <link rel="stylesheet" media='screen and (min-width: 931px)' href="styleDesktop.css"/>
+    <link rel="stylesheet"  href="style.css"/>
 
-    <script src="script.js"></script>
+
+
 </head>
 
 <body>
+
+
     <main>
 
   <script src="https://kit.fontawesome.com/67a2af0157.js" crossorigin="anonymous">
 
         </script>
+
+
         <div class="buttons">
+        <div class="button">
 
-            <i id="button-on" class="fa-solid fa-toggle-on"  onclick="darkmode()" ></i>
+            
+
+            <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>
 
 
-            <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()" ></i>
+            <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
+
+</div>
+
+
             <div class="drop-down-menu">
 
-                <span><a href="#" class="lang" onclick="languageOn()">Select language</a></span>
+                <span><a href="#" class="lang" onclick="languageOn()" >Select language</a></span>
                
                 
             </div>
         </div>
 
-        </div>
         <div id="lang-selection">
-        <span> FR <br /> ENG <br /> VAL  <br /><a href="#" onclick="replierLanguage();" id="replierLanguage">X</a></span>
+            <span >
+                <a href='index.php?data=FR' class="lang">FR</a>
+                <a href='index.php?data=EN' class="lang">EN</a>
+                <a href='index.php?data=VAL' class="lang">VAL</a>
+                <a href="#" onclick="replierLanguage();" id="replierLanguage" class="lang">X</a>
+            </span>
        
     </div>
+
         <header>
             <img src="/img/JonSnow.jpg" alt="Profil" srcset="">
             <h1 id="fName">jon</h1>
@@ -61,14 +74,10 @@ require 'elements/data.php';
         </header>
         <div id="about">
             <h2>Team leader</h2>
-            <p>I am an effective leader, that has the power to motivate loyal people to reach and exceed their potential. I lead by example and I have a natural flair for leadership with a proven track record of winning.</p>
+            <p><?= $data[4][0] ?></p>
         </div>
         <section class="info">
-       
 
-
-      
-     
         <article>
             <a href="#" onclick="voirsuite1();" id="voirsuite1">
 
@@ -135,6 +144,8 @@ require 'elements/data.php';
         </section>
 
     </main>
+
+    <script src="/script.js"></script>
 
 </body>
 

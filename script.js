@@ -53,11 +53,22 @@ function languageOn() {
 function replierLanguage() {
     document.getElementById('lang-selection').style.display='block';
      document.getElementById('lang-selection').style.display='none';
+
+ }
+
  }
  
- 
- 
 
+
+ let buttons = document.querySelector('.button');
+
+ let body = document.querySelector('body');
+
+ 
+ 
+        buttons.addEventListener('click', ()=> {
+            body.classList.toggle('dark-mode');
+        })
 
 
 

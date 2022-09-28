@@ -4,7 +4,7 @@
 
 /*Monserrat font*/
 :root {
-  --backgroundBody: #BFF7FF;
+  --backgroundBody: #e5fdff;
   --backgroundBox: #3088AE;
   --shadow: #002C3A;
   --border: #002C3A;
@@ -100,6 +100,7 @@
     margin: 0;
     font-size: 1.5vw;
     font-family: var(--mainFont);
+    text-align: center;
   }
 
   .info {
@@ -179,9 +180,13 @@
       opacity: 1;
     }
   }
+
 }
 
 /*# sourceMappingURL=styleDesktop.css.map */
+
+
+
 
 /* BUTTONS */
 
@@ -207,6 +212,10 @@
 
 .lang {
   font-size: 0.7rem;
+
+
+  text-decoration: none;
+
 }
 
 #lang-selection {
@@ -214,4 +223,20 @@
   display: none;
   align-self: end;
   font-size: 0.7rem;
+
 }
+
+}
+
+
+
+
+}
+
+#lang-selection {
+  display: none;
+  align-self: end;
+  font-size: 0.7rem;
+}/*# sourceMappingURL=styleDesktop.css.map */
+
+
