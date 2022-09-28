@@ -1,8 +1,10 @@
 
+
 <?php
 require 'elements/data.php';
 
 ?>
+
 
 
 <!DOCTYPE html>
@@ -13,15 +15,17 @@ require 'elements/data.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cv Jon Snow</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" media='screen and (max-width: 930px)' href="styleMobile.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 931px)' href="styleDesktop.css"/>
+
     <script src="script.js"></script>
 </head>
 
 <body>
     <main>
 
-
-        <script src="https://kit.fontawesome.com/67a2af0157.js" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/67a2af0157.js" crossorigin="anonymous">
 
         </script>
         <div class="buttons">
@@ -44,13 +48,20 @@ require 'elements/data.php';
        
     </div>
         <header>
-            <img src="img/JonSnow.jpg" alt="Profil" srcset="">
-
-
+            <img src="/img/JonSnow.jpg" alt="Profil" srcset="">
+            <h1 id="fName">jon</h1>
+            <h1 id="lName">SNOW</h1>
         </header>
         <div id="about">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2>Team leader</h2>
+            <p>I am an effective leader, that has the power to motivate loyal people to reach and exceed their potential. I lead by example and I have a natural flair for leadership with a proven track record of winning.</p>
         </div>
+        <section class="info">
+       
+
+
+      
+     
         <article>
             <a href="#" onclick="voirsuite1();" id="voirsuite1">
 
@@ -65,10 +76,12 @@ require 'elements/data.php';
                 <br>
                 <a href="#" onclick="replier1();" id="replier1">X</a>
 
+
             </div>
         </article>
         <article>
             <a href="#" onclick="voirsuite2();" id="voirsuite2">
+
 
                 <h2><?= $data[0][1] ?></h2>
             </a>
@@ -78,6 +91,7 @@ require 'elements/data.php';
                     echo $value . "<br>";
                 }
                 ?><br />
+
                 <a href="#" onclick="replier2();" id="replier2">X</a>
             </div>
         </article>
@@ -92,6 +106,7 @@ require 'elements/data.php';
                     echo $value . "<br>";
                 }
                 ?><br />
+
 
                 <a href="#" onclick="replier3();" id="replier3">X</a>
             </div>
@@ -109,6 +124,9 @@ require 'elements/data.php';
                 <a href="#" onclick="replier4();" id="replier4">X</a>
             </div>
         </article>
+
+        </section>
+
     </main>
 
 </body>
