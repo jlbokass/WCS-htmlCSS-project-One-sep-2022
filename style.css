@@ -2,14 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 
 :root {
-    --backgroundBody: #BFF7FF;
-    --backgroundBox: #3088AE;
-    --shadow: #002C3A;
-    --border: #002C3A;
-    --colorFont: #002C3A;
-}
-
-.dark-mode {
     --backgroundBody: #020B10;
     --backgroundBox: #181733;
     --shadow: #E6E0E6;
@@ -17,91 +9,13 @@
     --colorFont: #E6E0E6;
 }
 
+.dark-mode {
 
-body{
-    font-family: 'Cinzel Decorative', cursive;
-
-    line-height: 1.5em;
-    background-color: var(--backgroundBody);
-    color: var(--colorFont);
-}
-
-#suite1
-{
-    margin:0;
-    display:none;
-    font-family: 'Roboto', sans-serif;
-}
-#suite1 h2{
-    font-family: 'Cinzel Decorative', cursive;
-}
-#suite2
-{
-    margin:0;
-    display:none;
-    font-family: 'Roboto', sans-serif;
-}
-#suite2 h2{
-    font-family: 'Cinzel Decorative', cursive;
-}
-#suite3
-{
-    margin:0;
-    display:none;
-    font-family: 'Roboto', sans-serif;
-}
-#suite3 h2{
-    font-family: 'Cinzel Decorative', cursive;
-}
-#suite4
-{
-    margin:0;
-    display:none;
-    font-family: 'Roboto', sans-serif;
-}
-#suite4 h2{
-    font-family: 'Cinzel Decorative', cursive;
-}
-
-p {
-    text-align: center;
-    font-style: italic;
-}
-
-header {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-header img {
-    width: 75%;
-    border-radius: 50%;
-    box-shadow: 5px 5px 5px var(--shadow);
-}
-
-a {
-    text-decoration: none;
-    color: var(--colorFont);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-article {
-    border: solid 1px var(--border);
-    /*box-shadow: 5px 5px 5px var(--shadow);*/
-    border-radius: 5px;
-    background-color: var(--backgroundBox);
-    margin: 20px;
-    padding: 0 5px;
-    transition: transform 0.5s;
-}
-
-article:hover {
-    transform: scale(1.1);
+    --backgroundBody: #BFF7FF;
+    --backgroundBox: #3088AE;
+    --shadow: #002C3A;
+    --border: #002C3A;
+    --colorFont: #002C3A;
 }
 
 /* BUTTONS */
