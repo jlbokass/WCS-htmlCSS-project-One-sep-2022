@@ -1,7 +1,9 @@
+
 <?php
 require 'elements/data.php';
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -17,6 +19,7 @@ require 'elements/data.php';
 
 <body>
     <main>
+
 
         <script src="https://kit.fontawesome.com/67a2af0157.js" crossorigin="anonymous">
 
@@ -50,6 +53,7 @@ require 'elements/data.php';
         </div>
         <article>
             <a href="#" onclick="voirsuite1();" id="voirsuite1">
+
                 <h2><?= $data[0][0] ?></h2>
             </a>
             <div id="suite1">
@@ -60,10 +64,12 @@ require 'elements/data.php';
                 ?>
                 <br>
                 <a href="#" onclick="replier1();" id="replier1">X</a>
+
             </div>
         </article>
         <article>
             <a href="#" onclick="voirsuite2();" id="voirsuite2">
+
                 <h2><?= $data[0][1] ?></h2>
             </a>
             <div id="suite2">
@@ -77,6 +83,7 @@ require 'elements/data.php';
         </article>
         <article>
             <a href="#" onclick="voirsuite3();" id="voirsuite3">
+
                 <h2><?= $data[0][2] ?></h2>
             </a>
             <div id="suite3">
@@ -85,6 +92,7 @@ require 'elements/data.php';
                     echo $value . "<br>";
                 }
                 ?><br />
+
                 <a href="#" onclick="replier3();" id="replier3">X</a>
             </div>
         </article>

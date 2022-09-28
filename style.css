@@ -1,120 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+function voirsuite1() {
+    document.getElementById('voirsuite1').style.display = 'none';
+    document.getElementById('suite1').style.display = 'block';
+}
+function voirsuite2() {
+    document.getElementById('voirsuite2').style.display = 'none';
+    document.getElementById('suite2').style.display = 'block'; z
+}
+function voirsuite3() {
+    document.getElementById('voirsuite3').style.display = 'none';
+    document.getElementById('suite3').style.display = 'block';
+}
+function voirsuite4() {
+    document.getElementById('voirsuite4').style.display = 'none';
+    document.getElementById('suite4').style.display = 'block';
+}
+function replier1() {
+    document.getElementById('voirsuite1').style.display = 'block';
+    document.getElementById('suite1').style.display = 'none';
+}
+function replier2() {
+    document.getElementById('voirsuite2').style.display = 'block';
+    document.getElementById('suite2').style.display = 'none';
+}
+function replier3() {
+    document.getElementById('voirsuite3').style.display = 'block';
+    document.getElementById('suite3').style.display = 'none';
+}
 
-:root{
-      --backgroundBody :  #BFF7FF;
-      --backgroundBox : #3088AE;
-      --shadow : #002C3A;
-      --border: #002C3A;
-      --colorFont: #002C3A;
-}
-body{
-    font-family: 'Cinzel Decorative', cursive;
-    display: flex;
-    line-height: 1.5em;
-    background-color: var(--backgroundBody);
-    color: var(--colorFont);
-}
-#suite1
+function replier4()
 {
-    margin:0;
-    display:none;
-    font-family: 'Roboto', sans-serif;
-}
-#suite1 h2{
-    font-family: 'Cinzel Decorative', cursive;
-}
-#suite2
-{
-    margin:0;
-    display:none;
-    font-family: 'Roboto', sans-serif;
-}
-#suite2 h2{
-    font-family: 'Cinzel Decorative', cursive;
-}
-#suite3
-{
-    margin:0;
-    display:none;
-    font-family: 'Roboto', sans-serif;
-}
-#suite3 h2{
-    font-family: 'Cinzel Decorative', cursive;
-}
-#suite4
-{
-    margin:0;
-    display:none;
-    font-family: 'Roboto', sans-serif;
-}
-#suite4 h2{
-    font-family: 'Cinzel Decorative', cursive;
-}
-p{
-    text-align: center;
-    font-style: italic;
-}
-header {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-header img{
-    width: 75%;
-    border-radius: 50%;
-    box-shadow: 5px 5px 5px var(--shadow);
-}
-a{
-    text-decoration: none;
-    color: var(--colorFont);
-}
-main{
-    display: flex;
-    flex-direction: column;
-}
-article{
-    border: solid 1px var(--border);
-    box-shadow: 5px 5px 5px var(--shadow);
-    border-radius: 5px;
-    background-color: var(--backgroundBox);
-    margin: 20px;
-    padding: 0 5px;
-    transition: transform 0.5s;
-}
-article:hover{
-    transform: scale(1.1);
+    document.getElementById('voirsuite4').style.display='block';   
+    document.getElementById('suite4').style.display='none';
 }
 
-/* BUTTONS */
 
-#button-off {
-    display: none;
+function darkmode() {
+    document.getElementById('button-on').style.display='none';   
+    document.getElementById('button-off').style.display='block';
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
-
+function lightmode() {
+    document.getElementById('button-off').style.display='none';   
+    document.getElementById('button-on').style.display='block';
+   
 }
 
-.drop-down-menu {
-    border: 1px solid black;
-    padding: 3px;
-    border-radius: 25px 25px 25px 25px;
+function languageOn() {
+   document.getElementById('lang-selection').style.display='none';
+    document.getElementById('lang-selection').style.display='block';
 }
 
-.drop-down-menu:hover {
-    background-color: grey;
-}
+function replierLanguage() {
+    document.getElementById('lang-selection').style.display='block';
+     document.getElementById('lang-selection').style.display='none';
+ }
+ 
+ 
+ 
 
-.lang {
-    font-size: 0.7rem;
-}
 
-#lang-selection {
-    
-    display: none;
-    align-self: end;
-    font-size: 0.7rem;
-}
+
+
+
+
+
+
