@@ -85,3 +85,36 @@ article{
 article:hover{
     transform: scale(1.1);
 }
+
+/* BUTTONS */
+
+#button-off {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.drop-down-menu {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.drop-down-menu:hover {
+    background-color: grey;
+}
+
+.lang {
+    font-size: 0.7rem;
+}
+
+#lang-selection {
+    
+    display: none;
+    align-self: end;
+    font-size: 0.7rem;
+}

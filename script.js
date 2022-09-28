@@ -38,3 +38,36 @@ function replier4()
     document.getElementById('voirsuite4').style.display='block';   
     document.getElementById('suite4').style.display='none';
 }
+
+
+function darkmode() {
+    document.getElementById('button-on').style.display='none';   
+    document.getElementById('button-off').style.display='block';
+}
+
+function lightmode() {
+    document.getElementById('button-off').style.display='none';   
+    document.getElementById('button-on').style.display='block';
+   
+}
+
+function languageOn() {
+   document.getElementById('lang-selection').style.display='none';
+    document.getElementById('lang-selection').style.display='block';
+}
+
+function replierLanguage() {
+    document.getElementById('lang-selection').style.display='block';
+     document.getElementById('lang-selection').style.display='none';
+ }
+ 
+ 
+ 
+
+
+
+
+
+
+
+
