@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;500&family=Patua+One&display=swap");
 /*Game of thrones font*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Patua+One&display=swap");
+
 /*Monserrat font*/
 :root {
   --backgroundBody: #BFF7FF;
@@ -18,12 +19,14 @@
     background-color: var(--backgroundBody);
     color: var(--colorFont);
   }
+
   main {
     margin: 1vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   header {
     margin: 0;
     margin-top: 2%;
@@ -34,10 +37,27 @@
     align-items: center;
     position: relative;
   }
+
   header img {
     max-width: 40%;
     border-radius: 50%;
   }
+
+  .logoReseaux {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+  }
+
+  .twitter {
+    max-width: initial;
+  }
+
+  .linkedin {
+    border-radius: initial;
+    max-width: initial;
+  }
+
   header #fName {
     margin: 0;
     position: absolute;
@@ -46,8 +66,9 @@
     font-size: 8vw;
     font-family: var(--titleFont);
     -webkit-animation: fadeIn 5s;
-            animation: fadeIn 5s;
+    animation: fadeIn 5s;
   }
+
   header #lName {
     margin: 0;
     position: absolute;
@@ -56,8 +77,9 @@
     font-size: 8vw;
     font-family: var(--titleFont);
     -webkit-animation: fadeIn 5s;
-            animation: fadeIn 5s;
+    animation: fadeIn 5s;
   }
+
   #about {
     display: flex;
     flex-direction: column;
@@ -65,6 +87,7 @@
     align-items: center;
     margin-bottom: 5%;
   }
+
   #about h2 {
     align-items: center;
     margin: 0;
@@ -72,11 +95,13 @@
     font-size: 3vw;
     font-family: var(--titleFont);
   }
+
   #about p {
     margin: 0;
     font-size: 1.5vw;
     font-family: var(--mainFont);
   }
+
   .info {
     margin: 0;
     display: grid;
@@ -84,10 +109,12 @@
     grid-template-rows: auto;
     justify-content: center;
   }
+
   .info a {
     text-decoration: none;
     color: var(--colorFont);
   }
+
   .info article {
     border: solid 0px var(--border);
     border-radius: 10px;
@@ -98,47 +125,93 @@
     min-width: 45vw;
     transition: transform 0.5s;
   }
+
   .info article h2 {
     font-family: var(--titleFont);
     font-size: 2vw;
   }
+
   .info article p {
     font-family: var(--mainFont);
     font-size: 1vw;
   }
+
   .info article:hover {
     transform: scale(1.04);
   }
+
   .info #suite1 {
     margin: 0;
     display: none;
   }
+
   .info #suite2 {
     margin: 0;
     display: none;
   }
+
   .info #suite3 {
     margin: 0;
     display: none;
   }
+
   .info #suite4 {
     margin: 0;
     display: none;
   }
+
   @-webkit-keyframes fadeIn {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
-}/*# sourceMappingURL=styleDesktop.css.map */
+}
+
+/*# sourceMappingURL=styleDesktop.css.map */
+
+/* BUTTONS */
+
+#button-off {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.drop-down-menu {
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.drop-down-menu:hover {
+  background-color: grey;
+}
+
+.lang {
+  font-size: 0.7rem;
+}
+
+#lang-selection {
+
+  display: none;
+  align-self: end;
+  font-size: 0.7rem;
+}

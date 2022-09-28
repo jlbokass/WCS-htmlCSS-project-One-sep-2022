@@ -38,11 +38,13 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
+
     img {
       max-width: 40%;
-      border-radius: 50%;      
+      border-radius: 50%;
     }
-    #fName{
+
+    #fName {
       margin: 0;
       position: absolute;
       top: 50%;
@@ -51,7 +53,8 @@
       font-family: var(--titleFont);
       animation: fadeIn 5s;
     }
-    #lName{
+
+    #lName {
       margin: 0;
       position: absolute;
       top: 50%;
@@ -122,25 +125,33 @@
       transform: scale(1.04);
     }
 
-    #suite1 /*experience*/
+    #suite1
+
+    /*experience*/
       {
       margin: 0;
       display: none;
     }
 
-    #suite2 /*formation*/
+    #suite2
+
+    /*formation*/
       {
       margin: 0;
       display: none;
     }
 
-    #suite3 /*Compétences*/
+    #suite3
+
+    /*Compétences*/
       {
       margin: 0;
       display: none;
     }
 
-    #suite4 /*Contact*/
+    #suite4
+
+    /*Contact*/
       {
       margin: 0;
       display: none;
@@ -149,9 +160,46 @@
   }
 
   @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 
 }
 
+/* BUTTONS */
+
+#button-off {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.drop-down-menu {
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.drop-down-menu:hover {
+  background-color: grey;
+}
+
+.lang {
+  font-size: 0.7rem;
+}
+
+#lang-selection {
+
+  display: none;
+  align-self: end;
+  font-size: 0.7rem;
+}

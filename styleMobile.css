@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;500&family=Patua+One&display=swap");
 /*Game of thrones font*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Patua+One&display=swap");
+
 /*Monserrat font*/
 :root {
   --backgroundBody: #BFF7FF;
@@ -18,23 +19,27 @@
     background-color: var(--backgroundBody);
     color: var(--colorFont);
   }
+
   main {
     margin: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   header {
     margin-top: 4%;
     margin-bottom: 4%;
     display: flex;
     justify-content: center;
   }
+
   header img {
     max-width: 75%;
     border-radius: 50%;
     box-shadow: 5px 5px 5px var(--shadow);
   }
+
   #about {
     display: flex;
     flex-direction: column;
@@ -42,6 +47,7 @@
     align-items: center;
     margin-bottom: 5%;
   }
+
   #about h2 {
     align-items: center;
     margin: 0;
@@ -49,21 +55,25 @@
     font-size: 5.5vw;
     font-family: var(--titleFont);
   }
+
   #about p {
     margin: 0;
     font-size: 3.5vw;
     font-family: var(--mainFont);
   }
+
   .info {
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   .info a {
     text-decoration: none;
     color: var(--colorFont);
   }
+
   .info article {
     border: solid 0px var(--border);
     border-radius: 5px;
@@ -72,31 +82,73 @@
     padding: 0 5px;
     transition: transform 0.5s;
   }
+
   .info article h2 {
     font-size: 4vw;
     font-family: var(--titleFont);
   }
+
   .info article p {
     font-size: 2.5vw;
     font-family: var(--mainFont);
   }
+
   .info article:hover {
     transform: scale(1.1);
   }
+
   .info #suite1 {
     margin: 0;
     display: none;
   }
+
   .info #suite2 {
     margin: 0;
     display: none;
   }
+
   .info #suite3 {
     margin: 0;
     display: none;
   }
+
   .info #suite4 {
     margin: 0;
     display: none;
   }
-}/*# sourceMappingURL=styleMobile.css.map */
+}
+
+/*# sourceMappingURL=styleMobile.css.map */
+
+/* BUTTONS */
+
+#button-off {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.drop-down-menu {
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.drop-down-menu:hover {
+  background-color: grey;
+}
+
+.lang {
+  font-size: 0.7rem;
+}
+
+#lang-selection {
+
+  display: none;
+  align-self: end;
+  font-size: 0.7rem;
+}
