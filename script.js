@@ -61,8 +61,9 @@ function replierLanguage() {
 
  let body = document.querySelector('body');
 
- 
- 
-        buttons.addEventListener('click', ()=> {
+ body.className = document.cookie;
+
+ buttons.addEventListener('click', ()=> {
             body.classList.toggle('dark-mode');
-        })
+            document.cookie = body.className;
+        });

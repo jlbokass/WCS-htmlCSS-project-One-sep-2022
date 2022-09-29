@@ -24,7 +24,6 @@ $dataValyrian = [
     ["Skoriot ñuhyz zaldrīzesse ilzi, nuhor līr gūrēnna. Sīkudi nopāzmi! Daoruni gīmī, Ionos Sōnaro. Skorī dēmalȳti tymptir tymis, ērinis iā morghūlis. Bantis zōbrie issa se ossȳngnoti lēdys."]
 ];
 
-
 if (isset($_GET['language'])){
     if (!empty($_GET['language']  == "EN")){
         $data = $dataEnglish;
@@ -34,6 +33,6 @@ if (isset($_GET['language'])){
 
     }elseif (!empty($_GET['language']  == "FR")){
         $data = $dataFrench;
-}}else{
+    }}else{
     $data = $dataFrench;
-};
+}

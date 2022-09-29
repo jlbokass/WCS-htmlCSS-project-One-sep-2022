@@ -15,12 +15,9 @@ require_once 'elements/data.php';
     <link rel="stylesheet" media='screen and (min-width: 931px)' href="styleDesktop.css"/>
     <link rel="stylesheet"  href="style.css"/>
 
-
-
 </head>
 
-<body>
-
+<body class="body">
 
     <main>
 
@@ -28,45 +25,10 @@ require_once 'elements/data.php';
 
         </script>
 
-
-<!--        <div class="buttons">-->
-<!--        <div class="button">-->
-<!---->
-<!--            -->
-<!---->
-<!--            <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>-->
-<!---->
-<!---->
-<!--            <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>-->
-<!---->
-<!--</div>-->
-<!---->
-<!---->
-<!--            <div class="drop-down-menu">-->
-<!---->
-<!--                <span><a href="#" class="lang" onclick="languageOn()" >Select language</a></span>-->
-<!--               -->
-<!--                -->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--        <div id="lang-selection">-->
-<!--            <span >-->
-<!--                <a href='index.php?data=FR' class="lang">FR</a>-->
-<!--                <a href='index.php?data=EN' class="lang">EN</a>-->
-<!--                <a href='index.php?data=VAL' class="lang">VAL</a>-->
-<!--                <a href="#" onclick="replierLanguage();" id="replierLanguage" class="lang">X</a>-->
-<!--            </span>-->
-<!--       -->
-<!--    </div>-->
-
         <div class="buttons">
             <div class="button">
 
-
-
                 <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>
-
 
                 <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
 
@@ -85,19 +47,16 @@ require_once 'elements/data.php';
 
             </div>
 
-
         </div>
 
         <header>
             <img src="/img/JonSnow.jpg" alt="Profil" srcset="">
-            <h1 id="fName">jon</h1>
+            <h1 id="fName">JON</h1>
             <h1 id="lName">SNOW</h1>
                 <div class="logoReseaux">
                 <a href="https://twitter.com/LordSnow" target="_blank"><img src="/img/twitter-logo.png" class ="twitter" alt="logo lien twitter"></a>
                 <a href="https://uk.linkedin.com/in/jon-snow-3b1245192/fr?trk=people-guest_people_search-card" target="_blank"><img src="/img/linkedin-logo.png" class="linkedin" alt="logo lien linkedin"></a>
-                
-                
-                
+
                 </div>
         </header>
         <div id="about">
@@ -163,7 +122,6 @@ require_once 'elements/data.php';
             <div id="suite4">
                 <h2>Contact</h2>
                 Mobile : 01.23.45.67.89<br />
-                Linkekin : jon.snow@linkedin.fr<br />
                 <a href="mailto:jon.snow@gameofthrones">@ jon.snow@gameofthrones</a><br /><br />
                 <a href="#" onclick="replier4();" id="replier4">X</a>
             </div>
