@@ -54,11 +54,8 @@ function replierLanguage() {
     document.getElementById('lang-selection').style.display='block';
      document.getElementById('lang-selection').style.display='none';
 
- }
 
  }
- 
-
 
  let buttons = document.querySelector('.button');
 
@@ -69,11 +66,3 @@ function replierLanguage() {
         buttons.addEventListener('click', ()=> {
             body.classList.toggle('dark-mode');
         })
-
-
-
-
-
-
-
-

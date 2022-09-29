@@ -1,5 +1,5 @@
 <?php
-require 'elements/data.php';
+require_once 'elements/data.php';
 ?>
 
 <!DOCTYPE html>
@@ -29,36 +29,64 @@ require 'elements/data.php';
         </script>
 
 
+<!--        <div class="buttons">-->
+<!--        <div class="button">-->
+<!---->
+<!--            -->
+<!---->
+<!--            <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>-->
+<!---->
+<!---->
+<!--            <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>-->
+<!---->
+<!--</div>-->
+<!---->
+<!---->
+<!--            <div class="drop-down-menu">-->
+<!---->
+<!--                <span><a href="#" class="lang" onclick="languageOn()" >Select language</a></span>-->
+<!--               -->
+<!--                -->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--        <div id="lang-selection">-->
+<!--            <span >-->
+<!--                <a href='index.php?data=FR' class="lang">FR</a>-->
+<!--                <a href='index.php?data=EN' class="lang">EN</a>-->
+<!--                <a href='index.php?data=VAL' class="lang">VAL</a>-->
+<!--                <a href="#" onclick="replierLanguage();" id="replierLanguage" class="lang">X</a>-->
+<!--            </span>-->
+<!--       -->
+<!--    </div>-->
+
         <div class="buttons">
-        <div class="button">
-
-            
-
-            <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>
+            <div class="button">
 
 
-            <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
 
-</div>
+                <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>
 
 
-            <div class="drop-down-menu">
+                <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
 
-                <span><a href="#" class="lang" onclick="languageOn()" >Select language</a></span>
-               
-                
             </div>
-        </div>
 
-        <div id="lang-selection">
-            <span >
-                <a href='index.php?data=FR' class="lang">FR</a>
-                <a href='index.php?data=EN' class="lang">EN</a>
-                <a href='index.php?data=VAL' class="lang">VAL</a>
-                <a href="#" onclick="replierLanguage();" id="replierLanguage" class="lang">X</a>
-            </span>
-       
-    </div>
+            <div id="lang-selection">
+                <form action="index.php" method ="get">
+                    <label for="language">Select a language:</label>
+                    <select name="language" id="language" >
+                        <option class="lang" value="FR">FR</option>
+                        <option class="lang" value="EN">EN</option>
+                        <option class="lang" value="VAL">VAL</option>
+                        <input type="submit">
+                    </select>
+                </form>
+
+            </div>
+
+
+        </div>
 
         <header>
             <img src="/img/JonSnow.jpg" alt="Profil" srcset="">
