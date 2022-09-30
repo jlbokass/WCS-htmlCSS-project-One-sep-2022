@@ -40,6 +40,10 @@
     background-color: grey;
 }
 
+.button {
+    cursor: pointer;
+}
+
 .lang {
     font-size: 0.7rem;
 }

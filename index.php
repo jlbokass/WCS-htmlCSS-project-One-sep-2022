@@ -24,13 +24,14 @@ require_once 'elements/data.php';
   <script src="https://kit.fontawesome.com/67a2af0157.js" crossorigin="anonymous">
 
         </script>
-
         <div class="buttons">
             <div class="button">
                 <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>
 
 
                 <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
+
+
 
 
             </div>
@@ -50,17 +51,25 @@ require_once 'elements/data.php';
                 </form>
 
             </div>
+
+
+        </div>
+        <div class="logoReseaux">
+            <a href="https://twitter.com/LordSnow" target="_blank"><img src="/img/twitter-icon-25px.png" class="twitter" alt="logo lien twitter"></a>
+            <a href="https://uk.linkedin.com/in/jon-snow-3b1245192/fr?trk=people-guest_people_search-card" target="_blank"><img src="/img/linkedin-icon-25px.png" class="linkedin" alt="logo lien linkedin"></a>
         </div>
 
         <header>
             <img src="/img/JonSnow.jpg" alt="Profil" srcset="">
-            <h1 id="fName">JON</h1>
+            <h1 id="fName">jon</h1>
             <h1 id="lName">SNOW</h1>
-                <div class="logoReseaux">
-                <a href="https://twitter.com/LordSnow" target="_blank"><img src="/img/twitter-logo.png" class ="twitter" alt="logo lien twitter"></a>
-                <a href="https://uk.linkedin.com/in/jon-snow-3b1245192/fr?trk=people-guest_people_search-card" target="_blank"><img src="/img/linkedin-logo.png" class="linkedin" alt="logo lien linkedin"></a>
+            <div class="logoGoT">
+                <img src="/img/stark2.png" class ="stark" alt="logo stark">
+                <img src="/img/targaryen2.png" class="targaryen" alt="logo targaryen">
+                <img src="/img/stark1.png" class ="stark1" alt="logo stark">
+                <img src="/img/targaryen1.png" class="targaryen1" alt="logo targaryen">
 
-                </div>
+            </div>
         </header>
         <div id="about">
             <h2>Team leader</h2>
@@ -68,23 +77,21 @@ require_once 'elements/data.php';
         </div>
         <section class="info">
 
-        <article>
-            <a href="#" onclick="voirsuite1();" id="voirsuite1">
+            <article>
+                <a href="#article1">
+                    <h2 class="more1">
+                        <?= $data[0][0] ?>
+                    </h2>
+                </a>
 
-                <h2><?= $data[0][0] ?></h2>
-            </a>
-            <div id="suite1">
-                <h2 class="article-title"><?= $data[0][0] ?></h2>
-                <?php foreach ($data[1] as $value) {
-                    echo $value . "<br>";
-                }
-                ?>
-                <br>
-                <a href="#" onclick="replier1();" id="replier1">X</a>
-
-
-            </div>
-        </article>
+                <div class="text1">
+                    <?php foreach ($data[1] as $value) {
+                        echo $value . "<br>";
+                    }
+                    ?>
+                    <br>
+                </div>
+            </article>
         <article>
             <a href="#" onclick="voirsuite2();" id="voirsuite2">
 
