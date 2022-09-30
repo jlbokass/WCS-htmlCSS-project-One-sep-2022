@@ -22,7 +22,7 @@ An online CV gives more freedom than a paper CV, be creative and fun ;-)
 * Joint work on a single Github repository [sample workflow](https://wildcodeschool.github.io/workflow-project-1/)
 * The pages, even made individually, must be graphically consistent! (graphic charter, fonts, spacing, etc.)
 * Lauch your project online with GitHub pages or Netlify
-* Duration: 2 weeks dedicated to the project From 26/09/22 to 10/10/22
+* Duration: 2 weeks dedicated to the project From 26/09/22 to 07/10/22
 
 ### Unrolled:
 
