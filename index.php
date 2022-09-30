@@ -27,26 +27,29 @@ require_once 'elements/data.php';
 
         <div class="buttons">
             <div class="button">
-
                 <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>
+
 
                 <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
 
+
             </div>
+
+
+
 
             <div id="lang-selection">
                 <form action="index.php" method ="get">
-                    <label for="language">Select a language:</label>
+                    <label for="language" class="font-language">Select a language</label>
                     <select name="language" id="language" >
                         <option class="lang" value="FR">FR</option>
                         <option class="lang" value="EN">EN</option>
                         <option class="lang" value="VAL">VAL</option>
-                        <input type="submit">
+                        <input type="submit" id="submit-button" value="Change">
                     </select>
                 </form>
 
             </div>
-
         </div>
 
         <header>
