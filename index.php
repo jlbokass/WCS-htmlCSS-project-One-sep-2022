@@ -17,7 +17,7 @@ require_once 'elements/data.php';
 
 </head>
 
-<body class="body">
+<body>
 
     <main>
 
@@ -30,15 +30,7 @@ require_once 'elements/data.php';
 
 
                 <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
-
-
-
-
-            </div>
-
-
-
-
+          </div>
             <div id="lang-selection">
                 <form action="index.php" method ="get">
                     <label for="language" class="font-language">Select a language</label>
