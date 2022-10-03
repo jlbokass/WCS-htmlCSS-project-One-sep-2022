@@ -88,6 +88,10 @@
     animation: fadeIn 5s;
   }
 
+  header #name {
+    display: none;
+  }
+
   #about {
     display: flex;
     flex-direction: column;
@@ -158,6 +162,7 @@
     margin: 0;
     display: block;
   }
+
   .info #suite2 {
     margin: 0;
     display: none;
@@ -173,7 +178,7 @@
     display: none;
   }
 
-  @-webkit-keyframes fadeIn {
+  @keyframes fadeIn {
     0% {
       opacity: 0;
     }
@@ -207,6 +212,7 @@ input[type=submit] {
   border: 1px solid var(--colorFont);
 
 }
+
 .logoReseaux {
 
   display: flex;
