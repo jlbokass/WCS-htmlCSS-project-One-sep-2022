@@ -82,6 +82,7 @@
     margin: 0;
     font-size: 3.5vw;
     font-family: var(--mainFont);
+    text-align: center;
   }
 
   @keyframes fadeIn {
@@ -128,6 +129,9 @@
     background-color: var(--backgroundBox);
     margin: 2vw;
     padding: 0 10px;
+    transition: transform 0.5s;
+    top: 0;
+
   }
 
   .info .title-article {
@@ -151,6 +155,7 @@
     transform: scale(1.05);
   }
 
+
   .info .text {
     height: 0px;
     overflow: hidden;
@@ -168,3 +173,74 @@
     content: '-';
   }
 }
+
+
+
+/* BUTTONS */
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  
+  font-size: 0.8rem;
+  font-family: var(--titleFont);
+
+}
+
+.font-language {
+  display: none;
+ 
+}
+
+#language {
+  width: 100%;
+  height: 15px;
+  font-size: 2vw;
+  background-color: var(--backgroundBox);
+  color: var(--colorFont);
+  margin-top: 0;
+
+
+}
+
+
+
+form {
+  display: flex ;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+
+}
+
+input[type=submit] { 
+  width : 100%;
+  height : 15px;
+  font-size: 2vw;
+  text-align: center;
+  background-color: var(--backgroundBox);
+  color: var(--colorFont);
+  border : 1px solid var(--colorFont);
+
+}
+
+
+.logoReseaux {
+  
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+}
+
+.twitter {
+  width: 25px;
+  height: auto;
+}
+
+.linkedin {
+  width: 25px;
+  height: auto;
+}
+
+
+
