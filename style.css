@@ -38,14 +38,24 @@
     background-color: grey;
 }
 
+.button {
+    cursor: pointer;
+}
+
 .lang {
     font-size: 0.7rem;
     text-decoration: none;
 
 }
 
+
 a:visited {
     color: #E6E0E6;
+
+#lang-selection {
+    align-self: end;
+    font-size: 0.7rem;
+
 }
 
 

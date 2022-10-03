@@ -1,5 +1,5 @@
 <?php
-require 'elements/data.php';
+require_once 'elements/data.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,18 +15,16 @@ require 'elements/data.php';
     <link rel="stylesheet" media='screen and (min-width: 931px)' href="styleDesktop.css"/>
     <link rel="stylesheet"  href="style.css"/>
 
-
-
 </head>
 
 <body class="body">
-
 
     <main>
 
   <script src="https://kit.fontawesome.com/67a2af0157.js" crossorigin="anonymous">
 
         </script>
+
 
 
                 <div class="buttons">
@@ -39,6 +37,8 @@ require 'elements/data.php';
 
 
             
+            </div>
+
             </div>
 
 
@@ -67,18 +67,22 @@ require 'elements/data.php';
         </div>
       
 
+
         <header>
             <img src="/img/JonSnow.jpg" alt="Profil" srcset="">
             <h1 id="fName">jon</h1>
             <h1 id="lName">SNOW</h1>
-                <div class="logoGoT">
+
+            <div class="logoGoT">
+
                 <img src="/img/stark2.png" class ="stark" alt="logo stark">
                 <img src="/img/targaryen2.png" class="targaryen" alt="logo targaryen">
                 <img src="/img/stark1.png" class ="stark1" alt="logo stark">
                 <img src="/img/targaryen1.png" class="targaryen1" alt="logo targaryen">
-                
-                
-                </div>
+
+
+            </div>
+
         </header>
         <div id="about">
             <h2>Team leader</h2>
@@ -86,7 +90,28 @@ require 'elements/data.php';
         </div>
 
 
+
         <section id="info">
+
+
+            <article>
+                <a href="#article1">
+                    <h2 class="more1">
+                        <?= $data[0][0] ?>
+                    </h2>
+                </a>
+
+                <div class="text1">
+                    <?php foreach ($data[1] as $value) {
+                        echo $value . "<br>";
+                    }
+                    ?>
+                    <br>
+                </div>
+            </article>
+        <article>
+            <a href="#" onclick="voirsuite2();" id="voirsuite2">
+
 
 
 
@@ -141,6 +166,7 @@ require 'elements/data.php';
         </article>
         <article>
 
+
         <a href="#article4">
                     <h2 class="more4">
                         <?= $data[0][3] ?>
@@ -154,6 +180,7 @@ require 'elements/data.php';
                     ?>
                     <br>
                 </div>
+
         </article>
 
         </section>
