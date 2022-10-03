@@ -43,19 +43,28 @@
     border-radius: 50%;
   }
 
-  .logoReseaux {
+  .logoGoT {
     display: flex;
     width: 100vw;
     justify-content: space-around;
   }
 
-  .twitter {
+  .stark {
     max-width: initial;
   }
 
-  .linkedin {
+  .targaryen {  
     border-radius: initial;
     max-width: initial;
+  }
+
+  .stark1 {
+    display: none;
+  }
+
+  .targaryen1 {  
+    display: none;
+
   }
 
   header #fName {
@@ -103,7 +112,7 @@
     text-align: center;
   }
 
-  .info {
+  #info {
     margin: 0;
     display: grid;
     grid-template-columns: auto auto;
@@ -111,12 +120,12 @@
     justify-content: center;
   }
 
-  .info a {
+  #info a {
     text-decoration: none;
     color: var(--colorFont);
   }
 
-  .info article {
+  #info article {
     border: solid 0px var(--border);
     border-radius: 10px;
     background-color: var(--backgroundBox);
@@ -127,41 +136,62 @@
     transition: transform 0.5s;
   }
 
-  .info article h2 {
+  #info article h2 {
     font-family: var(--titleFont);
     font-size: 2vw;
   }
 
-  .info article p {
+  #info article p {
     font-family: var(--mainFont);
     font-size: 1vw;
   }
 
-  .info article:hover {
+  #info article:hover {
     transform: scale(1.04);
   }
 
-  .info #suite1 {
+  .text1 {
     margin: 0;
     display: none;
   }
 
-  .info #suite2 {
+  .text1.visible {
+    margin: 0;
+    display: block;
+  }
+
+  .text2 {
     margin: 0;
     display: none;
   }
 
-  .info #suite3 {
+  .text2.visible {
+    margin: 0;
+    display: block;
+  }
+  .text3 {
     margin: 0;
     display: none;
   }
 
-  .info #suite4 {
+  .text3.visible {
+    margin: 0;
+    display: block;
+  }
+  .text4 {
     margin: 0;
     display: none;
   }
 
-  @-webkit-keyframes fadeIn {
+  .text4.visible {
+    margin: 0;
+    display: block;
+  }
+
+  
+ 
+
+  @keyframes fadeIn {
     0% {
       opacity: 0;
     }
@@ -172,4 +202,46 @@
   }
 
 }
+
+/* BUTTONS */ 
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  
+  font-size: 0.8rem;
+  font-family: var(--titleFont);
+
+}
+
+#language {
+  background-color: var(--backgroundBox);
+  color: var(--colorFont);
+
+
+}
+
+input[type=submit] {
+  background-color: var(--backgroundBox);
+  color: var(--colorFont);
+  border: 1px solid var(--colorFont);
+
+}
+
+.logoReseaux {
+  
+  display: flex;
+  flex-direction: column;
+  width: 32px;
+}
+
+.twitter {
+  max-width: initial;
+}
+
+.linkedin {
+  border-radius: initial;
+  max-width: initial;
+}
+
 

@@ -3,13 +3,15 @@
 
 :root {
     --backgroundBody: #020B10;
-    --backgroundBox: #181733;
+    --backgroundBox: #182631;
     --shadow: #E6E0E6;
     --border: #080B35;
     --colorFont: #E6E0E6;
+    --titleFont: Cinzel, serif;
+
 }
 
-.dark-mode {
+.light-mode {
 
     --backgroundBody: #BFF7FF;
     --backgroundBox: #3088AE;
@@ -24,14 +26,10 @@
     display: none;
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
 
-}
 
 .drop-down-menu {
-    border: 1px solid black;
+    border: 1px solid #E6E0E6;
     padding: 3px;
     border-radius: 25px 25px 25px 25px;
 }
@@ -42,13 +40,21 @@
 
 .lang {
     font-size: 0.7rem;
+    text-decoration: none;
+
 }
 
-#lang-selection {
-    
-    display: none;
-    align-self: end;
-    font-size: 0.7rem;
+a:visited {
+    color: #E6E0E6;
 }
 
 
+
+
+.button {
+    cursor: pointer;
+}
+
+input[type=submit] { 
+    border-radius: 50px;
+}

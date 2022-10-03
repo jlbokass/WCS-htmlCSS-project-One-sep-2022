@@ -19,7 +19,7 @@ require 'elements/data.php';
 
 </head>
 
-<body>
+<body class="body">
 
 
     <main>
@@ -29,45 +29,53 @@ require 'elements/data.php';
         </script>
 
 
-        <div class="buttons">
-        <div class="button">
+                <div class="buttons">
+                            <div class="button">
+                            <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>
+
+
+                <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
+
+
 
             
-
-            <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>
-
-
-            <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
-
-</div>
-
-
-            <div class="drop-down-menu">
-
-                <span><a href="#" class="lang" onclick="languageOn()" >Select language</a></span>
-               
-                
             </div>
-        </div>
 
-        <div id="lang-selection">
-            <span >
-                <a href='index.php?data=FR' class="lang">FR</a>
-                <a href='index.php?data=EN' class="lang">EN</a>
-                <a href='index.php?data=VAL' class="lang">VAL</a>
-                <a href="#" onclick="replierLanguage();" id="replierLanguage" class="lang">X</a>
-            </span>
-       
-    </div>
+
+         
+
+            <div id="lang-selection">
+                <form action="index.php" method ="get">
+                    <label for="language" class="font-language"><?= $data[6][0]?></label>
+                    <select name="language" id="language" >
+                        <option class="lang" value="FR">FR</option>
+                        <option class="lang" value="EN">EN</option>
+                        <option class="lang" value="VAL">VAL</option>
+                        <input type="submit" id="submit-button" value="Change">
+                    </select>
+                </form>
+
+            </div>
+
+
+        </div>
+        <div class="logoReseaux">
+            
+            <a href="https://twitter.com/LordSnow" target="_blank"><img src="/img/twitter-icon-25px.png" class="twitter" alt="logo lien twitter"></a>
+
+            <a href="https://uk.linkedin.com/in/jon-snow-3b1245192/fr?trk=people-guest_people_search-card" target="_blank"><img src="/img/linkedin-icon-25px.png" class="linkedin" alt="logo lien linkedin"></a>
+        </div>
+      
 
         <header>
             <img src="/img/JonSnow.jpg" alt="Profil" srcset="">
             <h1 id="fName">jon</h1>
             <h1 id="lName">SNOW</h1>
-                <div class="logoReseaux">
-                <a href="https://twitter.com/LordSnow" target="_blank"><img src="/img/twitter-logo.png" class ="twitter" alt="logo lien twitter"></a>
-                <a href="https://uk.linkedin.com/in/jon-snow-3b1245192/fr?trk=people-guest_people_search-card" target="_blank"><img src="/img/linkedin-logo.png" class="linkedin" alt="logo lien linkedin"></a>
-                
+                <div class="logoGoT">
+                <img src="/img/stark2.png" class ="stark" alt="logo stark">
+                <img src="/img/targaryen2.png" class="targaryen" alt="logo targaryen">
+                <img src="/img/stark1.png" class ="stark1" alt="logo stark">
+                <img src="/img/targaryen1.png" class="targaryen1" alt="logo targaryen">
                 
                 
                 </div>
@@ -76,69 +84,76 @@ require 'elements/data.php';
             <h2>Team leader</h2>
             <p><?= $data[4][0] ?></p>
         </div>
-        <section class="info">
+
+
+        <section id="info">
+
+
 
         <article>
-            <a href="#" onclick="voirsuite1();" id="voirsuite1">
+                <a href="#article1">
+                    <h2 class="more1">
+                        <?= $data[0][0] ?>
+                    </h2>
+                </a>
 
-                <h2><?= $data[0][0] ?></h2>
-            </a>
-            <div id="suite1">
-                <h2 class="article-title"><?= $data[0][0] ?></h2>
-                <?php foreach ($data[1] as $value) {
-                    echo $value . "<br>";
-                }
-                ?>
-                <br>
-                <a href="#" onclick="replier1();" id="replier1">X</a>
+                <div class="text1">
+                    <?php foreach ($data[1] as $value) {
+                        echo $value . "<br>";
+                    }
+                    ?>
+                    <br>
+                </div>
+            </article>
+        <article>
+            
+        <a href="#article2">
+                    <h2 class="more2">
+                        <?= $data[0][1] ?>
+                    </h2>
+                </a>
+              
 
-
+                <div class="text2">
+                    <?php foreach ($data[2] as $value) {
+                        echo $value . "<br>";
+                    }
+                    ?>
+                    <br>
+                </div>
+        </article>
             </div>
+                </div>
+        <article>
+        <a href="#article3">
+                    <h2 class="more3">
+                        <?= $data[0][2] ?>
+                    </h2>
+                </a>
+
+                <div class="text3">
+                    <?php foreach ($data[3] as $value) {
+                        echo $value . "<br>";
+                    }
+                    ?>
+                    <br>
+                </div>
         </article>
         <article>
-            <a href="#" onclick="voirsuite2();" id="voirsuite2">
 
+        <a href="#article4">
+                    <h2 class="more4">
+                        <?= $data[0][3] ?>
+                    </h2>
+                </a>
 
-                <h2><?= $data[0][1] ?></h2>
-            </a>
-            <div id="suite2">
-                <h2><?= $data[0][1] ?></h2>
-                <?php foreach ($data[2] as $value) {
-                    echo $value . "<br>";
-                }
-                ?><br />
-
-                <a href="#" onclick="replier2();" id="replier2">X</a>
-            </div>
-        </article>
-        <article>
-            <a href="#" onclick="voirsuite3();" id="voirsuite3">
-
-                <h2><?= $data[0][2] ?></h2>
-            </a>
-            <div id="suite3">
-                <h2><?= $data[0][2] ?></h2>
-                <?php foreach ($data[3] as $value) {
-                    echo $value . "<br>";
-                }
-                ?><br />
-
-
-                <a href="#" onclick="replier3();" id="replier3">X</a>
-            </div>
-        </article>
-        <article>
-
-            <a href="#" onclick="voirsuite4();" id="voirsuite4">
-                <h2>Contact</h2>
-            </a>
-            <div id="suite4">
-                <h2>Contact</h2>
-                Mobile : 01.23.45.67.89<br />
-                Linkekin : jon.snow@linkedin.fr<br />
-                <a href="mailto:jon.snow@gameofthrones">@ jon.snow@gameofthrones</a><br /><br />
-                <a href="#" onclick="replier4();" id="replier4">X</a>
-            </div>
+                <div class="text4">
+                    <?php foreach ($data[5] as $value) {
+                        echo $value . "<br>";
+                    }
+                    ?>
+                    <br>
+                </div>
         </article>
 
         </section>
