@@ -75,7 +75,9 @@
     max-width: initial;
   }
 
+
   .targaryen {
+
     border-radius: initial;
     max-width: initial;
   }
@@ -84,8 +86,10 @@
     display: none;
   }
 
+
   .targaryen1 {
     display: none;
+
   }
 /*-----------------------------------about section-------------------------------------------------------------------------*/
   #about {
@@ -111,6 +115,7 @@
     font-family: var(--mainFont);
     text-align: center;
   }
+
 
 /*-----------------------------------info section-------------------------------------------------------------------------------*/
 .info {
@@ -186,11 +191,13 @@
   overflow: auto;
 }
 
+
 .collapsible input:checked ~ #collapsible_text p{
   padding-top: 4.5%;
   padding-left: 2.5%;
   overflow:auto;
 }
+
 
 /*-----------------------------------education section-------------------------------------------------------------------------*/
 .collapsibleEdu input{
@@ -371,6 +378,7 @@
 
 /*-----------------------------------Fname & Lname animation-------------------------------------------------------------------------*/
 
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -381,11 +389,19 @@
   }
 
 }
+
 /*-----------------------------------Dark/Light Mode & Language section--------------------------------------------------------------*/
+
+
+
+/* BUTTONS */ 
+
+  
+
+
 .buttons {
   display: flex;
   justify-content: space-between;
-
   font-size: 0.8rem;
   font-family: var(--titleFont);
 
@@ -404,7 +420,11 @@ input[type=submit] {
   border: 1px solid var(--colorFont);
 
 }
+
 /*-----------------------------------social media section-------------------------------------------------------------------------*/
+
+
+
 .logoReseaux {
 
   display: flex;
