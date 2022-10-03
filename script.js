@@ -61,13 +61,11 @@ function replierLanguage() {
 
  let body = document.querySelector('body');
 
- body.className = document.cookie;
-
+ body.className = localStorage.getItem('theme');
 
  buttons.addEventListener('click', ()=> {
             body.classList.toggle('light-mode');
-            document.cookie = body.className;
-            console.log(document.cookie);
+            localStorage.setItem("theme", body.className);
         });
 
 let title1 = document.querySelector('.more1');
