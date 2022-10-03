@@ -91,7 +91,15 @@
     display: none;
 
   }
+
+
+  header #name {
+    display: none;
+  }
+
+
 /*-----------------------------------about section-------------------------------------------------------------------------*/
+
   #about {
     margin: 2vw;
     display: flex;
@@ -192,11 +200,13 @@
 }
 
 
+
 .collapsible input:checked ~ #collapsible_text p{
   padding-top: 4.5%;
   padding-left: 2.5%;
   overflow:auto;
 }
+
 
 
 /*-----------------------------------education section-------------------------------------------------------------------------*/
@@ -379,6 +389,7 @@
 /*-----------------------------------Fname & Lname animation-------------------------------------------------------------------------*/
 
 
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -421,7 +432,9 @@ input[type=submit] {
 
 }
 
+
 /*-----------------------------------social media section-------------------------------------------------------------------------*/
+
 
 
 
@@ -439,5 +452,7 @@ input[type=submit] {
 .linkedin {
   border-radius: initial;
   max-width: initial;
+
 }
+
 

@@ -10,23 +10,27 @@ require_once 'elements/data.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cv Jon Snow</title>
-    <link rel="stylesheet" media='screen and (max-width: 930px)' href="styleMobile.css"/>
-    <link rel="stylesheet" media='screen and (min-width: 931px)' href="styleDesktop.css"/>
-    <link rel="stylesheet"  href="style.css"/>
+
+
+    <link rel="stylesheet" media='screen and (max-width: 930px)' href="styleMobile.css" />
+    <link rel="stylesheet" media='screen and (min-width: 931px)' href="styleDesktop.css" />
+    <link rel="stylesheet" href="style.css" />
 
 </head>
 
-<body class="body">
+<body>
 
     <main>
-
+        
 <!---------------------------Light & Dark mode section------------------------------------------------------------------->
     <script src="https://kit.fontawesome.com/67a2af0157.js" crossorigin="anonymous"></script>
+
         <div class="buttons">
             <div class="button">
                 <i id="button-on" class="fa-solid fa-toggle-on" onclick="darkmode()"></i>
                 <i id="button-off" class="fa-solid fa-toggle-off" onclick="lightmode()"></i>
             </div>
+
 <!---------------------------language section---------------------------------------------------------------------------->
 
             <div id="lang-selection">
@@ -41,7 +45,9 @@ require_once 'elements/data.php';
                 </form>
             </div>
         </div>
+
 <!---------------------------SocialMedia buttons---------------------------------------------------------------------------->
+
         <div class="logoReseaux">
             
             <a href="https://twitter.com/LordSnow" target="_blank"><img src="/img/twitter-icon-25px.png" class="twitter" alt="logo lien twitter"></a>
@@ -53,17 +59,22 @@ require_once 'elements/data.php';
 
         <header>
             <img src="/img/JonSnow.jpg" alt="Profil" srcset="">
-            <h1 id="fName">jon</h1>
+            <h1 id="fName">Jon</h1>
             <h1 id="lName">SNOW</h1>
 
-            <div class="logoGoT">
+            <h1 id="name">Jon SNOW</h1>
 
-                <img src="/img/stark2.png" class ="stark" alt="logo stark">
+        </header>
+
+        <div id="about">
+            <div class="logoGoT">
+                <img src="/img/stark2.png" class="stark" alt="logo stark">
+
                 <img src="/img/targaryen2.png" class="targaryen" alt="logo targaryen">
-                <img src="/img/stark1.png" class ="stark1" alt="logo stark">
+                <img src="/img/stark1.png" class="stark1" alt="logo stark">
                 <img src="/img/targaryen1.png" class="targaryen1" alt="logo targaryen">
             </div>
-        </header>
+
 <!---------------------------about section------------------------------------------------------------------------------->
         <div id="about">
             <h2>King of the North</h2>
@@ -109,6 +120,7 @@ require_once 'elements/data.php';
                 <label id ="labelSkl" for="collapsible_headSkl" onclick="changeZindexSkl()"><?= $data[0][1] ?></label>
                 <div id="collapsible_textSkl">
                     <P><?php foreach ($data[2] as $value) {
+
                         echo $value . "<br>";
                     }
                     ?>
@@ -142,12 +154,14 @@ require_once 'elements/data.php';
 
                 <div class="text1">
                     <?php foreach ($data[1] as $value) {
+
                         echo $value . "<br>";
                     }
                     ?>
                     <br>
                 </div>
             </article>
+
         <article>
             
         <a href="#article2">
@@ -175,12 +189,14 @@ require_once 'elements/data.php';
                 </a>
 
                 <div class="text3">
+
                     <?php foreach ($data[3] as $value) {
                         echo $value . "<br>";
                     }
                     ?>
                     <br>
                 </div>
+
         </article>
         <article>
 
@@ -201,13 +217,22 @@ require_once 'elements/data.php';
 
         </article>
 
-        </section>
 
+            <article class="block">
+                <div class="title-article">
+                    <h2>Contact</h2>
+                </div>
+                <div class="text">
+                    Mobile : 01.23.45.67.89<br />
+                    <a href="mailto:jon.snow@gameofthrones">@ jon.snow@gameofthrones</a><br /><br />
+                    <br>
+                </div>
+            </article>
+        </section>
 
     </main>
 
     <script src="/script.js"></script>
-
 </body>
 
 </html>
